@@ -12,13 +12,27 @@ const Navbar = () => {
       <ul className="navbar__links">
         <li>
           <Link to="/cart">
-
+            {/* Shopping Cart Icon. Font Awesome. */}
+            <i className="fas fa-shopping-cart"></i>
+            Cart
+            <span className="cartlog__badge">0</span>
           </Link>
         </li>
-
+        <li>
+          <Link to="/">
+            {/* Back to the home page. */}
+            Shop
+          </Link>
+        </li>
       </ul>
 
       {/* hamburger */}
+      <div className="hamburger__menu">
+      <div></div>
+      <div></div>
+      <div></div>
+
+      </div>
     </nav>
   )
 }

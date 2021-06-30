@@ -4,4 +4,4 @@ const HomeScreen = () => {
   return <div className="homescreen">Home Screen</div>;
 };
 
-export default Homescreen
+export default HomeScreen
