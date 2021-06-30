@@ -18,13 +18,10 @@ app.use('/api/products', productRoutes);
 
 
 
-
-
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 
 
 
-// settting up models folder @21:48 https://www.youtube.com/watch?v=0divhP3pEsg
+// 50:00 Frontend build and styling.
