@@ -26,7 +26,7 @@ function App() {
         {/* Navbar Here */}
         <Navbar click={() => setSideToggle(true)} />
         {/* Side here. Pass useState */}
-        <SideDrawer show={sideToggle} />
+        <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />
         {/* Backdrop here. Pass useState */}
         <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
         <main>
