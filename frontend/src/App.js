@@ -1,4 +1,7 @@
 import './App.css';
+// To toggle the SideDrawer. Every time you click on the navbar it should open.
+// Set useState to false above the return.
+import {useState} from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
@@ -7,17 +10,25 @@ import HomeScreen from './screens/HomeScreen';
 import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
 
+
 // Importing Components.
 import Navbar from './components/Navbar';
+import Backdrop from './components/Backdrop';
+import SideDrawer from './components/SideDrawer';
 
 
 function App() {
+
+  const [sideToggle, setSideToggle] = useState(false);
+
   return (
       <Router>
         {/* Navbar Here */}
         <Navbar />
-        {/* Side Here */}
-        {/* Back Here */}
+        {/* Side here. Pass useState */}
+        <SideDrawer show={sideToggle} />
+        {/* Backdrop here. Pass useState */}
+        <Backdrop show={sideToggle} />
         <main>
         <Switch>
           <Route exact path="/" component={HomeScreen}/>
@@ -25,7 +36,6 @@ function App() {
           <Route exact path="/cart" component={CartScreen}/>
           </Switch>
         </main>
-
     </Router>
   );
 }

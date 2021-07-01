@@ -1,0 +1,11 @@
+.sidedrawer {
+  width: 70%;
+  height: 100vh;
+  background: rgba(255,255,255, 1);
+  /* position: fixed so that is doesn't scroll with the background. */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Keep z-index above backdrop. */
+  z-index: 200;
+}

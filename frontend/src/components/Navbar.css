@@ -1,5 +1,6 @@
 .navbar {
   width: 100%;
+  height: 110px;
   background-color: rgba(102, 51, 153, 1);
   display: flex;
   justify-content: space-between;
@@ -68,7 +69,7 @@
 .hamburger__menu {
   width: 30px;
   height: 30px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -79,4 +80,27 @@
   width: 100%;
   height: 3px;
   background: rgba(255, 255, 126, 1);
+}
+
+.hamburger__menu:hover > div {
+  background: rgba(154, 18, 179, 1);
+}
+
+/* ===== Media Queries ===== */
+/* To hide the Cart and Shop ".navbar__links when it gets small
+and show the hanburger. On mobile. */
+@media (max-width: 960px) {
+  .navbar__links {
+    display: none;
+  }
+  .hamburger__menu {
+    display: flex;
+  }
+}
+
+/* To make the logo smaller for mobile. */
+@media (max-width: 500px) {
+  .navbar_logo h2 {
+    font-size: 1rem;
+  }
 }
