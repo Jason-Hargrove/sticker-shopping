@@ -1,14 +1,14 @@
 import './Navbar.css';
 import {Link} from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ click }) => {
   return (
     <nav className="navbar">
-      {/* logo */}
+      {/* ===== Logo ===== */}
         <div className="navbar_logo">
         <h2>Sticker Shopping Cart</h2>
         </div>
-      {/* links */}
+      {/* ===== Links ===== */}
       <ul className="navbar__links">
         <li>
           <Link to="/cart" className="cart__link">
@@ -29,10 +29,11 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* hamburger */}
-      <div className="hamburger__menu">
+      {/* ===== Hamburger ===== */}
+      {/* Will need onClick. Must change the state in the App component. */}
+      <div className="hamburger__menu" onClick={click}>
       <div></div>
-      <div className="hamburger___menu-middle"></div>
+      <div></div>
       <div></div>
 
       </div>

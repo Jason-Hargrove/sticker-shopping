@@ -12,3 +12,9 @@
   transform: translateX(-100%);
   transition: all 0.3s ease-out;
 }
+
+/* When sidedrawer is set to true, it will add show. */
+/* Put translateX() back to where it was before at 0. */
+.sidedrawer.show {
+  transform: translateX(0);
+}
