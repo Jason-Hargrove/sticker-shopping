@@ -8,4 +8,7 @@
   left: 0;
   /* Keep z-index above backdrop. */
   z-index: 200;
+  /* SideDrawer no longer in screen. */
+  transform: translateX(-100%);
+  transition: all 0.3s ease-out;
 }
