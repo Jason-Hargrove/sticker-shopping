@@ -24,4 +24,4 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`))
 
 
 
-// 50:00 Frontend build and styling.
+// 1:27 
